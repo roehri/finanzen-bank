@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Weiter zur App – Finanzen</title>
+<style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:520px;margin:0 auto;padding:64px 20px;text-align:center;color:#1c1c1e;background:#fff}a{color:#0a84ff}@media (prefers-color-scheme:dark){body{background:#000;color:#f5f5f7}}</style>
+<script>
+  // Rücksprung von der Bank: Code und Prüfwert unverändert an die lokale App auf diesem Rechner weitergeben
+  var target = 'http://localhost:4747/bank/callback' + location.search;
+  location.replace(target);
+</script>
+</head>
+<body>
+<p>Weiter zur App …</p>
+<p><a id="go" href="http://localhost:4747/bank/callback">Falls nichts passiert: hier klicken</a></p>
+<script>document.getElementById('go').href = target;</script>
+</body></html>
